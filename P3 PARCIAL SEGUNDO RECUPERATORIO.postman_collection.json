@@ -1,0 +1,422 @@
+{
+	"info": {
+		"_postman_id": "81445eac-d1ed-43ed-bc01-502201da4fdb",
+		"name": "P3 PARCIAL SEGUNDO RECUPERATORIO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1-REGISTRO CLIENTE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "cliente@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "cliente",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "cliente",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "cliente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost/SegParcialProg_3_Recu/public/users/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"SegParcialProg_3_Recu",
+						"public",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1-REGISTRO ADMIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@admin.com",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost/SegParcialProg_3_Recu/public/users/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"SegParcialProg_3_Recu",
+						"public",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2-LOGIN ADMIN CON NOMBRE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost/SegParcialProg_3_Recu/public/login/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"SegParcialProg_3_Recu",
+						"public",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2-LOGIN ADMIN CON EMAIL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost/SegParcialProg_3_Recu/public/login/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"SegParcialProg_3_Recu",
+						"public",
+						"login",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2-LOGIN CLIENTE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "cliente",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "cliente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost/SegParcialProg_3_Recu/public/login/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"SegParcialProg_3_Recu",
+						"public",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3-POST MASCOTA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInRpcG8iOiJhZG1pbiIsImlkIjoxfQ.S0D4sYRsuPrUZOrrB1aihZuNabvicoFv1hLizqKRdT4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo",
+							"value": "gato",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "600",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost/SegParcialProg_3_Recu/public/mascota/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"SegParcialProg_3_Recu",
+						"public",
+						"mascota",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4-SACAR TURNO CLIENTE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJub21icmUiOiJjbGllbnRlIiwidGlwbyI6ImNsaWVudGUiLCJpZCI6Mn0.EsnOa8SsvNEXka1LF2mFuoVuqv5-dwRvtm14oYitAZI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo",
+							"value": "gato",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "10/10/2020",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost/SegParcialProg_3_Recu/public/turno/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"SegParcialProg_3_Recu",
+						"public",
+						"turno",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4- SACAR TURNO TIPO NO EXISTE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJub21icmUiOiJjbGllbnRlIiwidGlwbyI6ImNsaWVudGUiLCJpZCI6Mn0.EsnOa8SsvNEXka1LF2mFuoVuqv5-dwRvtm14oYitAZI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo",
+							"value": "asdasdasdsad",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "10/10/2020",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost/SegParcialProg_3_Recu/public/turno/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"SegParcialProg_3_Recu",
+						"public",
+						"turno",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5-MOSTRAR LISTADO TURNOS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJub21icmUiOiJhZG1pbiIsInRpcG8iOiJhZG1pbiIsImlkIjoxfQ.ldWEzjMDBtiqHL-BRH7iLcEIJuNffl1wqE7fcqBtNDU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost/SegParcialProg_3_Recu/public/turnos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"SegParcialProg_3_Recu",
+						"public",
+						"turnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6-MARCA TURNO COMO ATENDIDO",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJub21icmUiOiJhZG1pbiIsInRpcG8iOiJhZG1pbiIsImlkIjoxfQ.ldWEzjMDBtiqHL-BRH7iLcEIJuNffl1wqE7fcqBtNDU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost/SegParcialProg_3_Recu/public/turno/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"SegParcialProg_3_Recu",
+						"public",
+						"turno",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7- MOSTRAR FACTURAS DEL USUARIO",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJub21icmUiOiJjbGllbnRlIiwidGlwbyI6ImNsaWVudGUiLCJpZCI6Mn0.EsnOa8SsvNEXka1LF2mFuoVuqv5-dwRvtm14oYitAZI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost/SegParcialProg_3_Recu/public/factura",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"SegParcialProg_3_Recu",
+						"public",
+						"factura"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
